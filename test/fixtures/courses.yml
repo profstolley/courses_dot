@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  designation: MyString
+  title: MyString
+  site: MyString
+  basecamp: MyString
+  site_repo: MyString
+  demo_repo: MyString
+  work_repo: MyString
+
+two:
+  designation: MyString
+  title: MyString
+  site: MyString
+  basecamp: MyString
+  site_repo: MyString
+  demo_repo: MyString
+  work_repo: MyString
