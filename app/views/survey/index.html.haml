@@ -1,3 +1,15 @@
 %h1= "Survey for #{@survey.course.designation}"
 
-%p OMG I hope this works
+%ol
+  = form_with model: @survey, url: survey_path do |f|
+    = f.label "I accept the terms of the contract", for: :contract_acceptance
+    = f.check_box :contract_acceptance, id: :contract_acceptance
+
+    = fields_for :student, @survey.student do |student_fields|
+      %p
+        IIT thinks your first name is #{@survey.student.roster_first}.
+        How do you like to be called?
+      = student_fields.label :preferred_first
+      = student_fields.text_field :preferred_first
+
+%p There should be a form above for
