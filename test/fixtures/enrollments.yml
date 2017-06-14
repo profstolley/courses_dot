@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  course: one
+  student: one
+  contract_acceptance: false
+  term: MyString
+  survey_token: MyString
+
+two:
+  course: two
+  student: two
+  contract_acceptance: false
+  term: MyString
+  survey_token: MyString
