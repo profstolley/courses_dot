@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  roster_first: MyString
+  roster_last: MyString
+  preferred_first: MyString
+  university_email: MyString
+  preferred_email: MyString
+  github_username: MyString
+
+two:
+  roster_first: MyString
+  roster_last: MyString
+  preferred_first: MyString
+  university_email: MyString
+  preferred_email: MyString
+  github_username: MyString
