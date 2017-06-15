@@ -5,7 +5,7 @@
     = f.label "I accept the terms of the contract", for: :contract_acceptance
     = f.check_box :contract_acceptance, id: :contract_acceptance
 
-    = fields_for :student, @survey.student do |student_fields|
+    = f.fields_for :student, @survey.student do |student_fields|
       %p
         IIT thinks your first name is #{@survey.student.roster_first}.
         How do you like to be called?
