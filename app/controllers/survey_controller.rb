@@ -5,6 +5,13 @@ class SurveyController < ApplicationController
   end
 
   def update
+    respond_to do |format|
+      if @survey.update(survey_params)
+        format.html { redirect_to survey_thanks_path }
+      else
+        format.html { render :index }
+      end
+    end
   end
 
   def thanks
