@@ -24,6 +24,6 @@ class SurveyController < ApplicationController
   end
 
   def survey_params
-    params.require(:enrollment).permit(:survey_token, :contract_acceptance, student_attributes: :preferred_first)
+    params.require(:enrollment).permit(:survey_token, :contract_acceptance, student_attributes: [:id, :preferred_first])
   end
 end
